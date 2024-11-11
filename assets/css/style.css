@@ -68,16 +68,20 @@ nav {
     display: none;
     top: 100%;
 }
+
 /* nav toggle */
 #nav-toggle:checked~nav {
     display: block;
 }
-#nav-toggle{
+
+#nav-toggle {
     display: none;
 }
-.nav-toggle-label{
+
+.nav-toggle-label {
     font-size: 2rem;
 }
+
 /* main */
 main {
     background-color: lightblue;
@@ -89,4 +93,25 @@ main {
 /* footer */
 footer {
     background-color: orange;
+}
+
+/* media q: tablets and larger (768+) */
+@media screen and (min-width:768px) {
+    /* header */
+    nav {
+        display: block;
+        position: relative;
+        box-shadow: none;
+        width: fit-content;
+        padding-right: 1rem;
+    }
+    #menu{
+        display: flex;
+    }
+    #menu > li{
+        padding-left: 1rem;
+    }
+    .nav-toggle-label{
+        display: none;
+    }
 }
